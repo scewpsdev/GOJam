@@ -206,10 +206,10 @@ internal class Program : Game
 
 		LaunchParams launchParams = new LaunchParams(args);
 #if DEBUG
-		launchParams.fpsCap = 0;
+		//launchParams.fpsCap = 0;
 		launchParams.width = 1600;
 		launchParams.height = 900;
-		launchParams.maximized = true;
+		//launchParams.maximized = true;
 #else
 		launchParams.fpsCap = 120;
 		launchParams.fullscreen = true;
