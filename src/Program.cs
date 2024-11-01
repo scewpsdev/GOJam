@@ -68,6 +68,11 @@ internal class Program : Game
 			terminate();
 	}
 
+	protected override void onViewportSizeEvent(int width, int height)
+	{
+		Renderer.Resize(width, height);
+	}
+
 	protected override void onKeyEvent(KeyCode key, KeyModifier modifiers, bool down)
 	{
 		if (stateMachine.TryPeek(out State state))
